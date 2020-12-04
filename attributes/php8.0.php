@@ -1,13 +1,11 @@
 <?php
 
-namespace php80;
-
 class PhpAnnotations {
     #[Route("/", methods: ["GET"])]
     public function home() {}
 }
 
-$class = new ReflectionClass(Home::class);
+$class = new ReflectionClass(PhpAnnotations::class);
 
 $attributes = $class->getMethod('home')->getAttributes();
 

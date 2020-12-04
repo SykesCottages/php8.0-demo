@@ -1,7 +1,5 @@
 <?php
 
-namespace php74;
-
 class PhpAnnotations {
     /**
      * @Route("/api/posts/{id}", methods={"GET"})
@@ -9,7 +7,7 @@ class PhpAnnotations {
     public function home() {}
 }
 
-$class = new ReflectionClass(Home::class);
+$class = new ReflectionClass(PhpAnnotations::class);
 
 $docComment = $class->getMethod('home')->getDocComment();
 

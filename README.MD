@@ -11,8 +11,6 @@
 - Saner string to number comparisons [RFC](https://wiki.php.net/rfc/string_to_number_comparison)
 - Consistent type errors for internal functions [RFC](https://wiki.php.net/rfc/consistent_type_errors)
 
-
-
 ## Other Notes
 
 ### Type system and error handling improvements
