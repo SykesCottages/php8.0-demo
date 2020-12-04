@@ -1,0 +1,15 @@
+version: "2.0"
+
+services:
+
+  php-74:
+    image: sykescottages/php:7.4-cli
+    volumes:
+      - ./:/examples
+    working_dir: /examples
+
+  php-80:
+    image: sykescottages/php:8.0-cli
+    volumes:
+      - ./:/examples
+    working_dir: /examples
